@@ -1,0 +1,269 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+
+
+/* Fonts ------------------------------ */
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400i');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300i');
+@import url('https://fonts.googleapis.com/css?family=Muli');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif');
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*="col-"] {
+    float: left;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1462926795244-b273f8a5454f?ixlib=rb-0.3.5&s=51cdd92ff239278eecfee79db67593af&auto=format&fit=crop&w=1818&q=80);
+    background-size: cover;
+    height: 600px;
+    width: auto;
+    background-position: 0px 0px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+nav ul li {
+    margin-top: 10px;
+    margin-right: 30px;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #74b9ff;
+    transform: scale(1.1);
+    /*---------------------------------------nie dziala?*/
+    transition: ease-in-out 0.2s;
+}
+
+.logo {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: #FED136;
+    font-size: 34px;
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+    margin-left: 30px;
+    /* display: flex                  ------- nie oplywa elementu 
+    justify-content: flex-start; */
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    padding: 35px 35px 35px 35px;
+    margin-top: 150px;
+    font-size: 40px;
+}
+
+h1 span {
+    font-family: 'Muli', sans-serif;
+    font-style: normal;
+    font-size: 60px;
+
+}
+
+
+.button1 {
+    background-color: #FED136;
+    width: 200px;
+    height: 75px;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    border-radius: 5%;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* services ------------------------- */
+
+h2 {
+    margin: 100px auto;
+    text-align: center;
+    font-size: 42px;
+    color: #2d3436;
+}
+
+h2 span {
+    color: #7F7F7F;
+    font-size: 24px;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+}
+
+.fa {
+    font-size: 78px;
+    color: #2d3436;
+    padding: 50px 0px 30px 0px;
+}
+
+.ikony {
+    padding: 10px;
+    font-size: 24px;
+}
+
+.opis {
+    padding: 15px;
+}
+
+/* portfolio --------------------*/
+
+.portfolio img {
+    max-height: 100%;
+    height: 200px;
+    background-size: cover;
+}
+
+h4 {
+    margin-top: 12px auto;
+    text-align: center;
+    font-size: 20px;
+    color: #2d3436;
+    margin-bottom: 60px;
+}
+
+h4 span {
+    color: #7F7F7F;
+    font-size: 14px;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+}
+
+/* Abot Us ---------------------------------------------*/
+
+h4.about-us-right {
+    margin-top: 45px;
+    text-align: right;
+    font-size: 20px;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+.about-us-right-text {
+    color: #7F7F7F;
+    font-size: 16px;
+    font-family: 'IBM Plex Serif', serif;
+    padding-left: 20px;
+    text-align: right;
+    margin-bottom: 60px;
+}
+
+h4.about-us-left {
+
+    margin-top: 45px;
+    text-align: left;
+    font-size: 20px;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+.about-us-left-text {
+
+    color: #7F7F7F;
+    font-size: 16px;
+    font-family: 'IBM Plex Serif', serif;
+    padding-left: 20px;
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.about-us img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #dfe4ea;
+    margin-bottom: 160px;
+}
+
+.hidden {
+    visibility: hidden;
+}
