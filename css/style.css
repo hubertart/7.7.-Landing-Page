@@ -12,6 +12,12 @@
     clear: both;
 }
 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 
 
 /* Fonts ------------------------------ */
@@ -250,7 +256,7 @@ h4.about-us-left {
     color: #7F7F7F;
     font-size: 16px;
     font-family: 'IBM Plex Serif', serif;
-    padding-left: 20px;
+    padding-right: 20px;
     text-align: left;
     margin-bottom: 60px;
 }
@@ -266,4 +272,71 @@ h4.about-us-left {
 
 .hidden {
     visibility: hidden;
+}
+
+.yellow-circle {
+    background-color: #FED136;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+    border: 5px solid #dfe4ea;
+}
+
+.yellow-circle p {
+    text-align: center;
+    color: black;
+    margin-top: 40px;
+    color: white;
+    font-size: 24px;
+}
+
+/* Our Amazing Team -----------------------------------------*/
+
+.our-amazing-team img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #dfe4ea;
+    margin-bottom: 15px;
+}
+
+h4.amazing-team {
+    margin-top: 12px auto;
+    text-align: center;
+    font-size: 20px;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+h4 span {
+    color: #7F7F7F;
+    font-size: 14px;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+}
+
+.icon-btn {
+    height: 35px;
+    width: 35px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+.fa-social {
+    font-size: 25px;
+
+}
+
+.text-3 {
+    display: flex;
+    margin: 200px;
+    margin-top: 500px;
+    border: 1px solid black;
+    text-align: center;
 }
